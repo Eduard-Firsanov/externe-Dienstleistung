@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_PD_EXT_DIENSTL_APP_MOD</CLSNAME>
+    <LANGU>D</LANGU>
+    <DESCRIPT>Design Patterns: Application Model</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <MSG_ID>ZEXT_DIENSTL</MSG_ID>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>  Heizungsanlage</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>  Verbindung zur Heizanle löschen</ENTRY>
+     <LENGTH>35</LENGTH>
+    </item>
+   </TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>ADD_TREE_OBJECTS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekt zum Tree zuordnen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_APP_MOD</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Model Application Heizung-Einkauf erzeugen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_SUB_OBJECT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert das Instanz zum Sub-Objekt (z.b. Heizaanl z Vertrag)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_TREE_OBJECT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Zugeordnente Objekt zurücklifern</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_TREE_OBJECTS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Zugeordnente Objekte zurücklifern</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MO_APP_MOD</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Design Patterns: Application Model</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MT_ACTIVE_OBJECTS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Design Patterns in OO ABAP - tree objects table type</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_TREE_OBJECTS</CMPNAME>
+     <SCONAME>IT_OBJECTS</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Design Patterns Demo: Table of Tree Objects</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_APP_MOD</CMPNAME>
+     <SCONAME>RO_APP_MOD</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Design Patterns Demo: Application Model</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_SUB_OBJECT</CMPNAME>
+     <SCONAME>ID_SUBTYPE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Subtype W=Wartung K=KÜO</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_SUB_OBJECT</CMPNAME>
+     <SCONAME>IT_MAIN_WHERE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feuerstätte</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_SUB_OBJECT</CMPNAME>
+     <SCONAME>RO_OBJECT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Design Patterns Demo: Command Tree Object</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_TREE_OBJECT</CMPNAME>
+     <SCONAME>I_NODE_KEY</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Tree Control: Node Key</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_TREE_OBJECTS</CMPNAME>
+     <SCONAME>RT_OBJECTS</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Design Patterns Demo: Table of Tree Objects</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

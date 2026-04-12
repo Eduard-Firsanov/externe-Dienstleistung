@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZEXT_DIENSTL</ARBGB>
+    <MASTERLANG>D</MASTERLANG>
+    <STEXT>Ext. Dienstleistung</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZEXT_DIENSTL</ARBGB>
+     <MSGNR>000</MSGNR>
+     <TEXT>&amp; &amp; &amp; &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZEXT_DIENSTL</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Customizing für Dienstleistung &quot;ZTR_CUST_DIENST&quot; nicht definiert.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZEXT_DIENSTL</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Keine Datensätze zu Ihrer Selektion gefunden.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZEXT_DIENSTL</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Markieren Sie mindestens einen Eintrag in der Liste</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZEXT_DIENSTL</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>Cust Bemessungsart &amp; : Einstellungen pro Nutzungsart nicht definiert &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZEXT_DIENSTL</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>Es existiert bereits ein Eintrag zum Lieferant &amp; &amp; und Bemessung &amp;.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZEXT_DIENSTL</ARBGB>
+     <MSGNR>006</MSGNR>
+     <TEXT>Excel-Eintrag &amp; in die Tab. &quot;&amp;&quot; wurde nicht gefunden. Bitte überprüfen.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZEXT_DIENSTL</ARBGB>
+     <MSGNR>007</MSGNR>
+     <TEXT>Das Feld &amp; ist leer. Bitte die Excel-Tabelle &amp; überprüfen</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZEXT_DIENSTL</ARBGB>
+     <MSGNR>008</MSGNR>
+     <TEXT>Fehler: &quot;FLAECHE_ME_UPDATEN&quot; &amp; IO_MSGLIST ist initial.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZEXT_DIENSTL</ARBGB>
+     <MSGNR>009</MSGNR>
+     <TEXT>Excel-Eintrag &amp; &amp; wurde am &amp; importiert.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZEXT_DIENSTL</ARBGB>
+     <MSGNR>010</MSGNR>
+     <TEXT>Löschen &amp; ist nicht erlaubt, Bemessungen bereits an SAP übertragen sind.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZEXT_DIENSTL</ARBGB>
+     <MSGNR>011</MSGNR>
+     <TEXT>Die Objektdaten &amp;: &amp; &amp; ist erfolgreich gelöscht.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZEXT_DIENSTL</ARBGB>
+     <MSGNR>012</MSGNR>
+     <TEXT>Kündigung von &amp; wurde am &amp; aktiviert.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZEXT_DIENSTL</ARBGB>
+     <MSGNR>013</MSGNR>
+     <TEXT>Kündigung von &amp; wurde am &amp; deaktiviert.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZEXT_DIENSTL</ARBGB>
+     <MSGNR>014</MSGNR>
+     <TEXT>Bitte ME-Stammdaten &amp; aktualisieren. ME-Bemessung geändert Tool &amp; ME &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZEXT_DIENSTL</ARBGB>
+     <MSGNR>015</MSGNR>
+     <TEXT>&amp; Laufzeitende &amp; wurde geändert &amp;.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZEXT_DIENSTL</ARBGB>
+     <MSGNR>016</MSGNR>
+     <TEXT>Per &amp; ist ME &amp; verkauft oder nicht mehr gültig.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZEXT_DIENSTL</ARBGB>
+     <MSGNR>017</MSGNR>
+     <TEXT>ME &amp; Adressdaten wurde zum &amp; aktualisiert.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZEXT_DIENSTL</ARBGB>
+     <MSGNR>018</MSGNR>
+     <TEXT>ME &amp; Geschoss und Lage im Geschoss wurde zum &amp; aktualisiert.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZEXT_DIENSTL</ARBGB>
+     <MSGNR>019</MSGNR>
+     <TEXT>ME &amp; Bemessng &amp; wurde zum &amp; aktualisiert.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZEXT_DIENSTL</ARBGB>
+     <MSGNR>020</MSGNR>
+     <TEXT>ME &amp; Belegung wurde zum &amp; aktualisiert.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZEXT_DIENSTL</ARBGB>
+     <MSGNR>021</MSGNR>
+     <TEXT>ME &amp; Debitorendaten wurde zum &amp; aktualisiert.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZEXT_DIENSTL</ARBGB>
+     <MSGNR>022</MSGNR>
+     <TEXT>ME &amp; Daten von Wohnungsverwaster wurde zum &amp; aktualisiert.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZEXT_DIENSTL</ARBGB>
+     <MSGNR>023</MSGNR>
+     <TEXT>ME &amp; Baujahr und Finanzierungsart wurden zum &amp; aktualisiert.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZEXT_DIENSTL</ARBGB>
+     <MSGNR>024</MSGNR>
+     <TEXT>Eintrag &amp; &amp; wurde am &amp; geändert.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZEXT_DIENSTL</ARBGB>
+     <MSGNR>025</MSGNR>
+     <TEXT>Objekt &amp; ist bis &amp; gültig.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZEXT_DIENSTL</ARBGB>
+     <MSGNR>026</MSGNR>
+     <TEXT>Aktivität &quot;&amp;&quot; ist für SAP_Update gesperrt (Customizing).</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZEXT_DIENSTL</ARBGB>
+     <MSGNR>027</MSGNR>
+     <TEXT>Datentransfer beim Aktivität &quot;&amp;&quot; und Value &amp; sind nicht zugelassen.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZEXT_DIENSTL</ARBGB>
+     <MSGNR>028</MSGNR>
+     <TEXT>Bemessung &amp; &amp; wurde zum &amp; beendet.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZEXT_DIENSTL</ARBGB>
+     <MSGNR>029</MSGNR>
+     <TEXT>Bemessung &amp; &amp; wurde zum &amp; angelegt.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZEXT_DIENSTL</ARBGB>
+     <MSGNR>030</MSGNR>
+     <TEXT>Das Datum &quot;Umsetzung per&quot; soll größer als &amp; sein.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZEXT_DIENSTL</ARBGB>
+     <MSGNR>031</MSGNR>
+     <TEXT>Updatekonflikt &quot;Kündigung zum&quot; &amp; soll größer Beginn akt. Bemessung &amp; sein</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>D</SPRSL>
+     <ARBGB>ZEXT_DIENSTL</ARBGB>
+     <MSGNR>032</MSGNR>
+     <TEXT>Es ist bereits eine Anpassung der Fläche erfolgt.</TEXT>
+    </T100>
+   </T100>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>NA</ID>
+      <OBJECT>ZEXT_DIENSTL032</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0004</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00005</TXTLINES>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZEXT_DIENSTL032</TDNAME>
+      <TDID>NA</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00004</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;CAUSE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&quot;Sie haben das Kündigungsdatum geändert. Es ist bereits eine Anpassung</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>der Fläche erfolgt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;SYSTEM_RESPONSE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;WHAT_TO_DO&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Bitte passen Sie auf dem Mietobjekt unter Bemessungen das</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Gültigkeitsdatum der neuen Fläche an bzw. löschen die neue Fläche, wenn</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>die Kündigung aufgehoben wurde&quot;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;SYS_ADMIN&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

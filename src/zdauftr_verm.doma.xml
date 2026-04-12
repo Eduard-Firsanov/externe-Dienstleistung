@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DOMA" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD01V>
+    <DOMNAME>ZDAUFTR_VERM</DOMNAME>
+    <DDLANGUAGE>D</DDLANGUAGE>
+    <DATATYPE>CHAR</DATATYPE>
+    <LENG>000006</LENG>
+    <OUTPUTLEN>000006</OUTPUTLEN>
+    <LOWERCASE>X</LOWERCASE>
+    <VALEXI>X</VALEXI>
+    <DDTEXT>Auftrag Vermessung</DDTEXT>
+   </DD01V>
+   <DD07V_TAB>
+    <DD07V>
+     <VALPOS>0001</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>Immeo</DOMVALUE_L>
+     <DDTEXT>Immeo</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0002</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>Mieter</DOMVALUE_L>
+     <DDTEXT>Mieter</DDTEXT>
+    </DD07V>
+   </DD07V_TAB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

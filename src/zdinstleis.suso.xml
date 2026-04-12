@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SUSO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOBJ>
+    <OBJCT>ZDINSTLEIS</OBJCT>
+    <FIEL1>DIENSTLEIS</FIEL1>
+    <FIEL2>ACTVT</FIEL2>
+    <OCLSS>ZDIN</OCLSS>
+   </TOBJ>
+   <TOBJT>
+    <LANGU>D</LANGU>
+    <OBJECT>ZDINSTLEIS</OBJECT>
+    <TTEXT>ext. Dienstleistung</TTEXT>
+   </TOBJT>
+   <TACTZ>
+    <TACTZ>
+     <BROBJ>ZDINSTLEIS</BROBJ>
+     <ACTVT>01</ACTVT>
+    </TACTZ>
+    <TACTZ>
+     <BROBJ>ZDINSTLEIS</BROBJ>
+     <ACTVT>02</ACTVT>
+    </TACTZ>
+    <TACTZ>
+     <BROBJ>ZDINSTLEIS</BROBJ>
+     <ACTVT>03</ACTVT>
+    </TACTZ>
+    <TACTZ>
+     <BROBJ>ZDINSTLEIS</BROBJ>
+     <ACTVT>06</ACTVT>
+    </TACTZ>
+   </TACTZ>
+  </asx:values>
+ </asx:abap>
+</abapGit>

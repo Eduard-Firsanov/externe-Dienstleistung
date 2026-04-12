@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_PD_ZTEXD_FLACHE_MNGR</CLSNAME>
+    <LANGU>D</LANGU>
+    <DESCRIPT>Flächenänderung SAP: Bassistabelle-Manager (ZTEXD_FLACHE): S</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <RSTAT>P</RSTAT>
+    <MSG_ID>ZEXT_DIENSTL</MSG_ID>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Flächenänderung SAP: Bassistabelle</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>ADP</KEY>
+     <ENTRY>&amp;1 &amp;2, &amp;3 &amp;4, &amp;5, &amp;6.</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>ADR</KEY>
+     <ENTRY>MO-Anschrift:        &amp;1 &amp;2, &amp;3, &amp;4.</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>FEE</KEY>
+     <ENTRY>FEHLER: Info an Wohnungsverwalter</ENTRY>
+     <LENGTH>33</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>FEL</KEY>
+     <ENTRY>FEHLER: Upd.</ENTRY>
+     <LENGTH>12</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>OKE</KEY>
+     <ENTRY>Info an Wohnungsverwalter</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>OKU</KEY>
+     <ENTRY>Flächenupdate</ENTRY>
+     <LENGTH>13</LENGTH>
+    </item>
+   </TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>FILL_BUFFER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Füllt den Tabellenpuffer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FLAECHE_ME_UPDATEN</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fläche von ME updaten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_BELEGUNG_ZU_KW</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Lesen Belegung zu Kündiungsworkflow</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_FOLGEVERTRAG</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Icone für Belegungsstatus setzen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_IDENT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Get Objektidentifikation MV</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_IDENT_MV</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Get Objektidentifikation MV</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_VALID_TO</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Get Objektidentifikation ME</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ME_DETAIL_X</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Get Objektidentifikation ME</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MT_LIST</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Flächenänderung SAP: Bassistabelle</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MT_LIST_OLD</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Flächenänderung SAP: Bassistabelle</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SENDE_INFO_EMAIL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fläche von ME updaten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SENDE_INFO_EMAIL_GRUNDRISS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fläche von ME updaten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_BELEGUNG_ICON</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Icone für Belegungsstatus setzen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_INDO_WOHNVERWALTER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Set Info an Wohnungsverwalter</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>_GET_DEBITORENDATEN</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Aktualisiert Stammdaten in die Objektliste</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>_GET_MSGLIST</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert den Nachrichtensammler</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>_GET_WOHNVERWALTERDATEN</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Aktualisiert Stammdaten in die Objektliste</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>_OBJEKT_REFRESH</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Aktualisiert Stammdaten in die Objektliste</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>_SET_STATUS_ICON</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Set Statusicone</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>_STORE_MESSAGES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fehlerprotokoll speichern</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>FLAECHE_ME_UPDATEN</CMPNAME>
+     <SCONAME>CD_ME_UPDATE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Kommentar</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FLAECHE_ME_UPDATEN</CMPNAME>
+     <SCONAME>CD_ME_UPDATE_FLAG</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>allgemeines flag</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FLAECHE_ME_UPDATEN</CMPNAME>
+     <SCONAME>IO_MSGLIST</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Nachrichtensammler</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FLAECHE_ME_UPDATEN</CMPNAME>
+     <SCONAME>IT_FLACHE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Externe Dienstleistung Flächenänderung SAP</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_BELEGUNG_ZU_KW</CMPNAME>
+     <SCONAME>ID_BISDAT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Datum Ende der Auswertung</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_BELEGUNG_ZU_KW</CMPNAME>
+     <SCONAME>ID_OBJNR</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objektnummer</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_BELEGUNG_ZU_KW</CMPNAME>
+     <SCONAME>ID_VONDAT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Datum Beginn der Auswertung</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_BELEGUNG_ZU_KW</CMPNAME>
+     <SCONAME>RS_BELEGUNG</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Datum Ende der Auswertung</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_FOLGEVERTRAG</CMPNAME>
+     <SCONAME>ID_RECNENDABS</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Statusfeld</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_FOLGEVERTRAG</CMPNAME>
+     <SCONAME>ID_STICHTAG</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Aktuelles Datum des Applikationsservers</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_FOLGEVERTRAG</CMPNAME>
+     <SCONAME>IS_ME_KEY</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Mietobjekt: Schlüsselfelder</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_IDENT</CMPNAME>
+     <SCONAME>IS_DETAIL</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Interner Schlüssel des Immobilienobjekts</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_IDENT</CMPNAME>
+     <SCONAME>RD_IDENT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Vollständige Objektidentifikation, z.B. WE 1000/123</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_IDENT_MV</CMPNAME>
+     <SCONAME>ID_INTRENO</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Interner Schlüssel des Immobilienobjekts</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_IDENT_MV</CMPNAME>
+     <SCONAME>RD_IDENT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Vollständige Objektidentifikation, z.B. WE 1000/123</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_VALID_TO</CMPNAME>
+     <SCONAME>RD_VALIDTO</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Gültig bis</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ME_DETAIL_X</CMPNAME>
+     <SCONAME>IS_VIBDRO_X</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Vollständige Objektidentifikation, z.B. WE 1000/123</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SENDE_INFO_EMAIL</CMPNAME>
+     <SCONAME>ID_INFOART</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Infoart</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SENDE_INFO_EMAIL</CMPNAME>
+     <SCONAME>ID_RECNENDABS</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Kündigung (VICNNT)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SENDE_INFO_EMAIL</CMPNAME>
+     <SCONAME>IO_MSGLIST</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Nachrichtensammler</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SENDE_INFO_EMAIL</CMPNAME>
+     <SCONAME>IS_LIST</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Externe Dienstleistung Flächenänderung SAP</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SENDE_INFO_EMAIL_GRUNDRISS</CMPNAME>
+     <SCONAME>ID_INFOART</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Infoart</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SENDE_INFO_EMAIL_GRUNDRISS</CMPNAME>
+     <SCONAME>ID_RECNENDABS</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Kündigung (VICNNT)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SENDE_INFO_EMAIL_GRUNDRISS</CMPNAME>
+     <SCONAME>IO_MSGLIST</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Nachrichtensammler</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SENDE_INFO_EMAIL_GRUNDRISS</CMPNAME>
+     <SCONAME>IS_LIST</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Externe Dienstleistung Flächenänderung SAP</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_BELEGUNG_ICON</CMPNAME>
+     <SCONAME>CD_BELEGUNG_ICON</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Markierte Zeile (zu dieser Zeile wird Detailinfo angezeigt)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_BELEGUNG_ICON</CMPNAME>
+     <SCONAME>ID_RECNENDABS</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Statusfeld</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_BELEGUNG_ICON</CMPNAME>
+     <SCONAME>ID_STICHTAG</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Aktuelles Datum des Applikationsservers</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_INDO_WOHNVERWALTER</CMPNAME>
+     <SCONAME>CD_INFO_VERWALTER</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Info an Wohnungsverwalter</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_INDO_WOHNVERWALTER</CMPNAME>
+     <SCONAME>ID_INFOART</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>allgemeines flag</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_INDO_WOHNVERWALTER</CMPNAME>
+     <SCONAME>ID_KUENDGRUD</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Kündigungsgrund</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_INDO_WOHNVERWALTER</CMPNAME>
+     <SCONAME>ID_RECNENDABS</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Datum Laufzeitende</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_INDO_WOHNVERWALTER</CMPNAME>
+     <SCONAME>SUBRC</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Rückgabewert von ABAP-Anweisungen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_GET_DEBITORENDATEN</CMPNAME>
+     <SCONAME>CS_LIST_DBT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Debitorendaten</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_GET_DEBITORENDATEN</CMPNAME>
+     <SCONAME>ID_STICHTAG</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Stichtag für Selektion nach zeitlicher Gültigkeit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_GET_DEBITORENDATEN</CMPNAME>
+     <SCONAME>IO_MSGLIST</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Nachrichtensammler</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_GET_DEBITORENDATEN</CMPNAME>
+     <SCONAME>IS_LIST</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Externe Dienstleistung Flächenänderung SAP</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_GET_MSGLIST</CMPNAME>
+     <SCONAME>CO_MSGLIST</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>GUID (RAW16)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_GET_MSGLIST</CMPNAME>
+     <SCONAME>DC_MSGNUMBER</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Nachrichtensammler</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_GET_WOHNVERWALTERDATEN</CMPNAME>
+     <SCONAME>CS_LIST_WV</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Wohnungsverwalter</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_GET_WOHNVERWALTERDATEN</CMPNAME>
+     <SCONAME>ID_STICHTAG</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Stichtag für Selektion nach zeitlicher Gültigkeit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_GET_WOHNVERWALTERDATEN</CMPNAME>
+     <SCONAME>IO_MSGLIST</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Nachrichtensammler</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_GET_WOHNVERWALTERDATEN</CMPNAME>
+     <SCONAME>IS_LIST</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Externe Dienstleistung Flächenänderung SAP</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_OBJEKT_REFRESH</CMPNAME>
+     <SCONAME>CS_LIST</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Dienstleistungsguid</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_OBJEKT_REFRESH</CMPNAME>
+     <SCONAME>IO_MSGLIST</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Nachrichtensammler</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_OBJEKT_REFRESH</CMPNAME>
+     <SCONAME>IS_LIST</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Externe Dienstleistung Flächenänderung SAP</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_SET_STATUS_ICON</CMPNAME>
+     <SCONAME>CD_STATUS_ICON</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>allgemeines flag</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_SET_STATUS_ICON</CMPNAME>
+     <SCONAME>IO_MSGLIST</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>allgemeines flag</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_SET_STATUS_ICON</CMPNAME>
+     <SCONAME>IS_DETAIL</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Flächenänderung SAP: Bassistabelle (ZTEXD_FLACHE)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_STORE_MESSAGES</CMPNAME>
+     <SCONAME>ERROR</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fehler</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_STORE_MESSAGES</CMPNAME>
+     <SCONAME>IF_IN_UPDATE_TASK</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verbuchung mit &quot;IN UPDATE TASK&quot; rufen</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_STORE_MESSAGES</CMPNAME>
+     <SCONAME>IO_MSGLIST</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Nachrichtensammler</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>ZST_EXT_DIENST_NAVIGATION</TABNAME>
+    <DDLANGUAGE>D</DDLANGUAGE>
+    <TABCLASS>INTTAB</TABCLASS>
+    <LANGDEP>X</LANGDEP>
+    <DDTEXT>Navigation Heizanlagen zum Contracting</DDTEXT>
+    <EXCLASS>3</EXCLASS>
+   </DD02V>
+   <DD03P_TABLE>
+    <DD03P>
+     <FIELDNAME>.INCLUDE</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <PRECFIELD>RECA_BDT_NAVIGATION_FIELD</PRECFIELD>
+     <MASK>      S</MASK>
+     <DDTEXT>Allgemeine Navigationsinformation für BDT Applikation - Feld</DDTEXT>
+     <COMPTYPE>S</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>.INCLUDE</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <PRECFIELD>ZSTEXD_FLACHE_KEY</PRECFIELD>
+     <MASK>      S</MASK>
+     <DDTEXT>Flächenänderung KEY</DDTEXT>
+     <COMPTYPE>S</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>FIELDLINE</FIELDNAME>
+     <ROLLNAME>SYTABIX</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>FIRSTLINE</FIELDNAME>
+     <ROLLNAME>SYTABIX</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>SELECTLINE</FIELDNAME>
+     <ROLLNAME>SYTABIX</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>TABSTRIP</FIELDNAME>
+     <ROLLNAME>SYTCODE</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+   </DD03P_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

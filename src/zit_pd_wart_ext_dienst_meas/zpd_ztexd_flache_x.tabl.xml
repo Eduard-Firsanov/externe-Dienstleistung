@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>ZPD_ZTEXD_FLACHE_X</TABNAME>
+    <DDLANGUAGE>D</DDLANGUAGE>
+    <TABCLASS>INTTAB</TABCLASS>
+    <LANGDEP>X</LANGDEP>
+    <DDTEXT>Flächenänderung SAP: Bassistabelle und Zusatzfelder (ZTEXD_F</DDTEXT>
+    <EXCLASS>4</EXCLASS>
+   </DD02V>
+   <DD03P_TABLE>
+    <DD03P>
+     <FIELDNAME>.INCLUDE</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <PRECFIELD>ZPD_ZTEXD_FLACHE</PRECFIELD>
+     <MASK>      S</MASK>
+     <DDTEXT>Flächenänderung SAP: Bassistabelle (ZTEXD_FLACHE)</DDTEXT>
+     <COMPTYPE>S</COMPTYPE>
+     <GROUPNAME>ZPD_ZTEXD_FLACHE</GROUPNAME>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>COLORTAB</FIELDNAME>
+     <ROLLNAME>LVC_T_SCOL</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <DATATYPE>TTYP</DATATYPE>
+     <MASK>  TTYPL</MASK>
+     <COMPTYPE>L</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>STYLETAB</FIELDNAME>
+     <ROLLNAME>LVC_T_STYL</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <DATATYPE>TTYP</DATATYPE>
+     <MASK>  TTYPL</MASK>
+     <COMPTYPE>L</COMPTYPE>
+    </DD03P>
+   </DD03P_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

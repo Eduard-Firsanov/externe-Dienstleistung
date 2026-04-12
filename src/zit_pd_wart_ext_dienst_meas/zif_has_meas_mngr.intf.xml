@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>ZIF_HAS_MEAS_MNGR</CLSNAME>
+    <LANGU>D</LANGU>
+    <DESCRIPT>Get Bemessungsmanager</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_MEASCN_MNGR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert den Bemessung-Manager zurück</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MTO_BUS_OBJECT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Referenztabelle auf IF_RECA_BUS_OBJECT</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_MEASCN_MNGR</CMPNAME>
+     <SCONAME>ID_OBJNR</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objektnummer</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_MEASCN_MNGR</CMPNAME>
+     <SCONAME>RO_BUS_OBJECT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Business-Objekt</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

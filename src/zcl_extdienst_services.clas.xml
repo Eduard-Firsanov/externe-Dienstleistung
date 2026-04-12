@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_EXTDIENST_SERVICES</CLSNAME>
+    <LANGU>D</LANGU>
+    <DESCRIPT>Serviceklasse für Ext. Dienstleistungen</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <MSG_ID>ZEXT_DIENSTL</MSG_ID>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>FEE</KEY>
+     <ENTRY>FEHLER: Info an Wohnungsverwalter</ENTRY>
+     <LENGTH>33</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>FEL</KEY>
+     <ENTRY>FEHLER: Upd.</ENTRY>
+     <LENGTH>12</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>OKE</KEY>
+     <ENTRY>Info an Wohnungsverwalter</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>OKU</KEY>
+     <ENTRY>Flächenupdate</ENTRY>
+     <LENGTH>13</LENGTH>
+    </item>
+   </TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>FLAECHE_ME_UPDATEN</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fläche von ME updaten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_ADRESLINE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Adresszeile zurück (PSTLZ Ort Strasse Hausnr)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_MV_PARTNER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert MV BP-Daten zurück</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_PATH</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Pop-Up zum Pfad auswahl (Windows)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_WE_PARTNER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Lifert EMOD-Partner zurück</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SENDE_INFO_EMAIL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fläche von ME updaten</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>FLAECHE_ME_UPDATEN</CMPNAME>
+     <SCONAME>CD_ME_UPDATE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Kommentar</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FLAECHE_ME_UPDATEN</CMPNAME>
+     <SCONAME>CD_ME_UPDATE_FLAG</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>allgemeines flag</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FLAECHE_ME_UPDATEN</CMPNAME>
+     <SCONAME>IO_MSGLIST</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Nachrichtensammler</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FLAECHE_ME_UPDATEN</CMPNAME>
+     <SCONAME>IT_FLACHE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Externe Dienstleistung Flächenänderung SAP</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_MV_PARTNER</CMPNAME>
+     <SCONAME>ET_MV_PARTNER</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>MV-PArtner</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_MV_PARTNER</CMPNAME>
+     <SCONAME>ID_BUKRS</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Wirtschaftseinheit: Schlüsselfelder</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_MV_PARTNER</CMPNAME>
+     <SCONAME>ID_RECNNR</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Vertragsnummer Immobilien</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_MV_PARTNER</CMPNAME>
+     <SCONAME>IS_STICHTAG</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>MIS Speicherperiode und Selektionsdatumsfelder</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_MV_PARTNER</CMPNAME>
+     <SCONAME>IT_ROLLE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Bezeichnung der Geschäftspartner-Rolle</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_PATH</CMPNAME>
+     <SCONAME>INITIAL_DIRECTORY</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ausgangsverzeichnis</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_PATH</CMPNAME>
+     <SCONAME>PATH</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>SAP ArchiveLink Poolinfo/Ablagestrategie</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_WE_PARTNER</CMPNAME>
+     <SCONAME>IO_MSGLIST</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Nachrichtensammler</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_WE_PARTNER</CMPNAME>
+     <SCONAME>IT_ROLE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>GP-Rolle</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_WE_PARTNER</CMPNAME>
+     <SCONAME>I_BUKRS</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Buchungskreis</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_WE_PARTNER</CMPNAME>
+     <SCONAME>I_SWENR</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Nummer der Wirtschaftseinheit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_WE_PARTNER</CMPNAME>
+     <SCONAME>RT_PARTNER</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Partner eines RE Objekts - Intern</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SENDE_INFO_EMAIL</CMPNAME>
+     <SCONAME>ID_INFOART</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Infoart</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SENDE_INFO_EMAIL</CMPNAME>
+     <SCONAME>IO_MSGLIST</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Nachrichtensammler</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SENDE_INFO_EMAIL</CMPNAME>
+     <SCONAME>IS_DETAIL</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Kündigung (VICNNT)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SENDE_INFO_EMAIL</CMPNAME>
+     <SCONAME>IS_LIST</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Externe Dienstleistung Flächenänderung SAP</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>SAPLZFG_GUI_EXT_LEIST</NAME>
+    <DBAPL>S</DBAPL>
+    <DBNA>D$</DBNA>
+    <SUBC>F</SUBC>
+    <APPL>S</APPL>
+    <RLOAD>D</RLOAD>
+    <FIXPT>X</FIXPT>
+    <LDBNAME>D$S</LDBNAME>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Heizanlage einfügen</ENTRY>
+     <LENGTH>36</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>Heizanlage löschen</ENTRY>
+     <LENGTH>35</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>003</KEY>
+     <ENTRY>Objektliste ändern</ENTRY>
+     <LENGTH>30</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>004</KEY>
+     <ENTRY>Excel Import/Export</ENTRY>
+     <LENGTH>35</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>005</KEY>
+     <ENTRY>SAP-Update</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>006</KEY>
+     <ENTRY>Massenpflege</ENTRY>
+     <LENGTH>12</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>DOW</KEY>
+     <ENTRY>Datenübertragung nach Excel</ENTRY>
+     <LENGTH>27</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>HLP</KEY>
+     <ENTRY>Dokumentation</ENTRY>
+     <LENGTH>13</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>LO1</KEY>
+     <ENTRY>Ausgewählte Einträge werden unwiderruflich gelöscht.</ENTRY>
+     <LENGTH>52</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>LO2</KEY>
+     <ENTRY>Soll Löschung von Einträgen ausgeführt werden?</ENTRY>
+     <LENGTH>46</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>ME1</KEY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>MP1</KEY>
+     <ENTRY>Massenpflege Aktivität &quot;ja&quot;</ENTRY>
+     <LENGTH>27</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>MP2</KEY>
+     <ENTRY>Massenpflege Aktivität &quot;sofort&quot;</ENTRY>
+     <LENGTH>31</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>MP3</KEY>
+     <ENTRY>Massenpflege Aktivität &quot;nein&quot;</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>MP4</KEY>
+     <ENTRY>Massenpflege Aktivität &quot;info&quot;</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>MP5</KEY>
+     <ENTRY>Massenpflege Aktivität &quot;Prüfen&quot;</ENTRY>
+     <LENGTH>31</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>SOL</KEY>
+     <ENTRY>Objekte aus der Liste löschen</ENTRY>
+     <LENGTH>35</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>SOR</KEY>
+     <ENTRY>Stammdaten Aktualisieren</ENTRY>
+     <LENGTH>30</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>ST1</KEY>
+     <ENTRY>Alle zum Standort zugeordneten Heizanlagen und generierte Verträge</ENTRY>
+     <LENGTH>66</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>ST2</KEY>
+     <ENTRY>Möchten Sie die Bearbeitung fortsetzen?</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>ST3</KEY>
+     <ENTRY>werden gekündigt.</ENTRY>
+     <LENGTH>66</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>STK</KEY>
+     <ENTRY>Standort kündigen</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>STS</KEY>
+     <ENTRY>Kündigungen stornieren</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>UPL</KEY>
+     <ENTRY>Datenübernahme von Excel</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+   </TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

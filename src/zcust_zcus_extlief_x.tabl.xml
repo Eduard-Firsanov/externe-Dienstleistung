@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>ZCUST_ZCUS_EXTLIEF_X</TABNAME>
+    <DDLANGUAGE>D</DDLANGUAGE>
+    <TABCLASS>INTTAB</TABCLASS>
+    <LANGDEP>X</LANGDEP>
+    <DDTEXT>Cust Dienstleistungslieferanten und Zusatzfelder (ZCUS_EXTLI</DDTEXT>
+    <EXCLASS>3</EXCLASS>
+   </DD02V>
+   <DD03P_TABLE>
+    <DD03P>
+     <FIELDNAME>.INCLUDE</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <PRECFIELD>ZCUST_ZCUS_EXTLIEF</PRECFIELD>
+     <MASK>      S</MASK>
+     <DDTEXT>Cust Dienstleistungslieferanten (ZCUS_EXTLIEF)</DDTEXT>
+     <COMPTYPE>S</COMPTYPE>
+     <GROUPNAME>ZCUST_ZCUS_EXTLIEF</GROUPNAME>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>SPRAS</FIELDNAME>
+     <ROLLNAME>SPRAS</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <SHLPORIGIN>D</SHLPORIGIN>
+     <COMPTYPE>E</COMPTYPE>
+     <LANGUFLAG>X</LANGUFLAG>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>EXT_DIENSTLIFBEZ</FIELDNAME>
+     <ROLLNAME>ZD_EXT_DIENSTLIFBEZ</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+   </DD03P_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

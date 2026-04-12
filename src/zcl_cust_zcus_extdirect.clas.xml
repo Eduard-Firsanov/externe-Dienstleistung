@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_CUST_ZCUS_EXTDIRECT</CLSNAME>
+    <LANGU>D</LANGU>
+    <DESCRIPT>Cust Verzeichnis für Exceldaten (ZCUS_EXTDIRECT)</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <RSTAT>P</RSTAT>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Cust Verzeichnis für Exceldaten</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+   </TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CHECK_KEY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Prüft, ob Eintrag zum Primärschlüssel vorhanden ist (Excep.)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>COUNT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert Anzahl der Einträge</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>EXISTS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Prüft, ob Eintrag zum Primärschlüssel vorhanden ist (J/N)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_DETAIL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert Feldleiste zum Primärschlüssel</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_DETAIL_X</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert Feldleiste einschl. Zusatzdaten zum Primärschlüssel</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_LIST</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert alle Einträge</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_LIST_BY_DIENSTLEISTUNG</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert alle Einträge zum 1. Teilschlüsselfeld</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_LIST_BY_DIENSTLEISTUNG_X</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert alle Einträge/Zusatzdaten zum 1. Teilschlüsselfeld</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_LIST_X</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert alle Einträge einschließlich Zusatzdaten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MC_TABNAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Tabellenname</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MD_TABIX_INSERT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Index des einzufügenden Eintrags in den Tabellenpuffer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MF_BUFFER_COMPLETE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Puffer vollständig gefüllt?</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MS_BUFFER_HL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldleistenpuffer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MT_BUFFER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Tabellenpuffer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>RESET_BUFFER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Löscht den Tabellenpuffer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>TRANSFER_TO_BUFFER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>&lt;nur für ABAP Unit Tests&gt;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>_FILL_BUFFER_COMPLETE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Füllt den Tabellenpuffer mit allen Einträgen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>_SELECT_SINGLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Selektiert Eintrag zum Primärschlüssel aus Datenbank</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>CHECK_KEY</CMPNAME>
+     <SCONAME>ID_DIENSTLEISTUNG</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Dienstleistung</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CHECK_KEY</CMPNAME>
+     <SCONAME>ID_EXT_DIERECTORY</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verzeichnis für Exceldaten</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CHECK_KEY</CMPNAME>
+     <SCONAME>NOT_FOUND</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Nicht gefunden</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>COUNT</CMPNAME>
+     <SCONAME>RD_COUNT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anzahl der Einträge</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>EXISTS</CMPNAME>
+     <SCONAME>ID_DIENSTLEISTUNG</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Dienstleistung</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>EXISTS</CMPNAME>
+     <SCONAME>ID_EXT_DIERECTORY</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verzeichnis für Exceldaten</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>EXISTS</CMPNAME>
+     <SCONAME>RF_EXISTS</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Eintrag vorhanden?</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_DETAIL</CMPNAME>
+     <SCONAME>ID_DIENSTLEISTUNG</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Dienstleistung</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_DETAIL</CMPNAME>
+     <SCONAME>ID_EXT_DIERECTORY</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verzeichnis für Exceldaten</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_DETAIL</CMPNAME>
+     <SCONAME>ID_REQUIRE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>NOT_FOUND für: &apos;K&apos;ey / &apos; &apos;=keine Exception</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_DETAIL</CMPNAME>
+     <SCONAME>NOT_FOUND</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Nicht gefunden</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_DETAIL</CMPNAME>
+     <SCONAME>RS_DETAIL</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Cust Verzeichnis für Exceldaten</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_DETAIL_X</CMPNAME>
+     <SCONAME>ID_DIENSTLEISTUNG</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Dienstleistung</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_DETAIL_X</CMPNAME>
+     <SCONAME>ID_EXT_DIERECTORY</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verzeichnis für Exceldaten</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_DETAIL_X</CMPNAME>
+     <SCONAME>ID_LANGU</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Sprache</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_DETAIL_X</CMPNAME>
+     <SCONAME>ID_REQUIRE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>NOT_FOUND für: &apos;K&apos;ey / &apos;T&apos;ext / &apos; &apos;=keine Exception</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_DETAIL_X</CMPNAME>
+     <SCONAME>ID_XSEARCH</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Kein Text: &apos;1&apos;=Key / &apos;2&apos;=alt.Sprache / &apos;3&apos;=2+Key / &apos; &apos;=Orig.</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_DETAIL_X</CMPNAME>
+     <SCONAME>NOT_FOUND</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Nicht gefunden</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_DETAIL_X</CMPNAME>
+     <SCONAME>RS_DETAIL_X</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Cust Verzeichnis für Exceldaten und Zusatzfelder</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_LIST</CMPNAME>
+     <SCONAME>ET_LIST</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Cust Verzeichnis für Exceldaten</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_LIST</CMPNAME>
+     <SCONAME>ID_REQUIRE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>NOT_FOUND für: &apos;L&apos;iste leer / &apos; &apos;=keine Exception</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_LIST</CMPNAME>
+     <SCONAME>NOT_FOUND</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liste ist leer</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_LIST_BY_DIENSTLEISTUNG</CMPNAME>
+     <SCONAME>ET_LIST</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Cust Verzeichnis für Exceldaten</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_LIST_BY_DIENSTLEISTUNG</CMPNAME>
+     <SCONAME>ID_DIENSTLEISTUNG</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Dienstleistung</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_LIST_BY_DIENSTLEISTUNG</CMPNAME>
+     <SCONAME>ID_REQUIRE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>NOT_FOUND für: &apos;L&apos;iste leer / &apos; &apos;=keine Exception</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_LIST_BY_DIENSTLEISTUNG</CMPNAME>
+     <SCONAME>NOT_FOUND</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liste ist leer</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_LIST_BY_DIENSTLEISTUNG_X</CMPNAME>
+     <SCONAME>ET_LIST_X</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Cust Verzeichnis für Exceldaten und Zusatzfelder</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_LIST_BY_DIENSTLEISTUNG_X</CMPNAME>
+     <SCONAME>ID_DIENSTLEISTUNG</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Dienstleistung</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_LIST_BY_DIENSTLEISTUNG_X</CMPNAME>
+     <SCONAME>ID_LANGU</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Sprache</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_LIST_BY_DIENSTLEISTUNG_X</CMPNAME>
+     <SCONAME>ID_REQUIRE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>NOT_FOUND für: &apos;L&apos;iste leer / &apos; &apos;=keine Exception</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_LIST_BY_DIENSTLEISTUNG_X</CMPNAME>
+     <SCONAME>ID_XSEARCH</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Kein Text: &apos;1&apos;=Key / &apos;2&apos;=alt.Sprache / &apos;3&apos;=2+Key / &apos; &apos;=Orig.</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_LIST_BY_DIENSTLEISTUNG_X</CMPNAME>
+     <SCONAME>NOT_FOUND</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liste ist leer</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_LIST_X</CMPNAME>
+     <SCONAME>ET_LIST_X</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Cust Verzeichnis für Exceldaten und Zusatzfelder</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_LIST_X</CMPNAME>
+     <SCONAME>ID_LANGU</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Sprache</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_LIST_X</CMPNAME>
+     <SCONAME>ID_REQUIRE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>NOT_FOUND für: &apos;L&apos;iste leer / &apos; &apos;=keine Exception</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_LIST_X</CMPNAME>
+     <SCONAME>ID_XSEARCH</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Kein Text: &apos;1&apos;=Key / &apos;2&apos;=alt.Sprache / &apos;3&apos;=2+Key / &apos; &apos;=Orig.</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_LIST_X</CMPNAME>
+     <SCONAME>NOT_FOUND</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liste ist leer</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>TRANSFER_TO_BUFFER</CMPNAME>
+     <SCONAME>IT_LIST</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Cust Verzeichnis für Exceldaten</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_SELECT_SINGLE</CMPNAME>
+     <SCONAME>ID_DIENSTLEISTUNG</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Dienstleistung</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_SELECT_SINGLE</CMPNAME>
+     <SCONAME>ID_EXT_DIERECTORY</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verzeichnis für Exceldaten</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>_SELECT_SINGLE</CMPNAME>
+     <SCONAME>NOT_FOUND</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Primärschlüssel nicht gefunden</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCF_PD_ZTEXD_FLACHE_MNGR</CLSNAME>
+    <LANGU>D</LANGU>
+    <DESCRIPT>Flächenänderung SAP: Bassistabelle-Manager (ZTEXD_FLACHE): F</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <RSTAT>P</RSTAT>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Flächenänderung SAP: Bassistabelle</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+   </TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CHECK_AUTHORITY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Prüft Berechtigung</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FIND_BY_DIENSTLEISTUNG</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert Manager zum Dienstleistung zurück</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FIND_BY_TAB</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert Manager zum Objektnummertab zurück</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>CHECK_AUTHORITY</CMPNAME>
+     <SCONAME>ERROR</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fehler</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CHECK_AUTHORITY</CMPNAME>
+     <SCONAME>ID_ACTIVITY</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Aktivität</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FIND_BY_DIENSTLEISTUNG</CMPNAME>
+     <SCONAME>ID_DIENSTLEISTUNG</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Übergeordnetes Objekt</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FIND_BY_DIENSTLEISTUNG</CMPNAME>
+     <SCONAME>RO_INSTANCE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Flächenänderung SAP: Bassistabelle-Manager</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FIND_BY_TAB</CMPNAME>
+     <SCONAME>ID_DIENSTLEISTUNG</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Übergeordnetes Objekt</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FIND_BY_TAB</CMPNAME>
+     <SCONAME>IT_TAB</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>OBJNR</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FIND_BY_TAB</CMPNAME>
+     <SCONAME>RO_INSTANCE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Flächenänderung SAP: Bassistabelle-Manager</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

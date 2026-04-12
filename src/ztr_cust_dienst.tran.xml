@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TRAN" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TSTC>
+    <TCODE>ZTR_CUST_DIENST</TCODE>
+    <CINFO>Ag==</CINFO>
+   </TSTC>
+   <TSTCC>
+    <TCODE>ZTR_CUST_DIENST</TCODE>
+    <S_WEBGUI>1</S_WEBGUI>
+    <S_WIN32>X</S_WIN32>
+    <S_PLATIN>X</S_PLATIN>
+   </TSTCC>
+   <TSTCT>
+    <SPRSL>D</SPRSL>
+    <TCODE>ZTR_CUST_DIENST</TCODE>
+    <TTEXT>Custom: Dienstleisungsabwicklung</TTEXT>
+   </TSTCT>
+   <TSTCP>
+    <TCODE>ZTR_CUST_DIENST</TCODE>
+    <PARAM>/*SM34 VCLDIR-VCLNAME=ZZZVC_DIENST;UPDATE=X;</PARAM>
+   </TSTCP>
+  </asx:values>
+ </asx:abap>
+</abapGit>
