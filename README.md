@@ -1,44 +1,21 @@
-# Externe Dienstleistung
+# externe-Dienstleistung
 
-Dieses Repository enthält eine ABAP-Entwicklung für externe Dienstleistungen im abapGit-Format.
+## Ueberblick
 
-## Inhalt
+Dieses Repository enthaelt die ABAP-Entwicklung `Externe Dienstleistung` im abapGit-Format. Die technische Wurzel ist `src/`; dort liegen die exportierten ABAP-Objekte und ihre XML-Metadaten.
 
-- `.abapgit.xml`: Repository-Metadaten für abapGit
-- `src/`: ABAP-Objekte und zugehörige XML-Metadaten
+## Technische Ablage
 
-## Verwendung
+- `.abapgit.xml` enthaelt die Repository-Metadaten fuer abapGit.
+- `src/package.devc.xml` beschreibt das Hauptpaket `Externe Dienstleistung`.
+- `src/` enthaelt die versionierten ABAP-Objekte.
 
-Das Repository ist so aufgebaut, dass die abapGit-Dateien direkt im Repository-Stamm liegen. Dadurch kann es in einem ABAP-System direkt über abapGit als Online-Repository verwendet oder lokal mit Git versioniert werden.
+## Inhalt und Schwerpunkte
 
-## Lokaler Workflow
+- Repository-Stamm bereits in abapGit-kompatibler Struktur
+- ABAP-Objekte und zugehoerige XML-Metadaten direkt unter `src/`
+- geeignet fuer die Nutzung als Online-Repository in abapGit und fuer lokale Git-Versionierung
 
-Für die tägliche Entwicklung sollte genau eine lokale Arbeitskopie verwendet werden.
+## Arbeitsweise
 
-- Änderungen nur in der aktiven Arbeitskopie im vorgesehenen Entwicklungs-Workspace durchführen
-- Keine parallelen Kopien desselben Repositories in verschiedenen Ordnern pflegen
-- Vor `pull`, `commit` oder `push` immer kurz `git status` prüfen
-
-## Standardablauf
-
-Für normale Änderungen genügt dieser Ablauf:
-
-1. `git pull`
-2. ABAP-Objekte mit abapGit synchronisieren oder lokal ändern
-3. `git status` prüfen
-4. `git add .`
-5. `git commit -m "Kurze Beschreibung der Änderung"`
-6. `git push`
-
-## Hinweis
-
-In dieses Repository gehört nicht die ursprüngliche ZIP-Datei eines Exports, sondern nur deren entpackter abapGit-Inhalt.
-
-## Repository-Struktur
-
-```text
-.
-|-- .abapgit.xml
-|-- src/
-`-- README.md
-```
+Aenderungen sollten nur in einer aktiven Arbeitskopie vorgenommen werden. Fuer normale Aenderungen genuegt der Ablauf `git pull`, ABAP-Objekte synchronisieren oder anpassen, `git status` pruefen, dann `git add`, `git commit` und `git push`. In das Repository gehoert nur der entpackte abapGit-Inhalt, nicht die urspruengliche Export-ZIP-Datei.
